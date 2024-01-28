@@ -3,13 +3,19 @@
 namespace App\Models;
 
 use App\Enums\AccountType;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Spatie\LaravelData\WithData;
+use App\Data\Account\AccountData;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Account extends Model
 {
-    use HasFactory;
+    use HasFactory, WithData;
+
+    protected $dataClass = AccountData::class;
+
+    protected $guarded = ['id'];
 
     public function assets(): Collection
     {

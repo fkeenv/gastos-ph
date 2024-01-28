@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('account_type_id');
+            $table->unsignedBigInteger('type_id');
             $table->unsignedBigInteger('account_code');
             $table->string('name');
             $table->string('description')->nullable();
             $table->timestamps();
 
-            $table->foreign('account_type_id')->references('id')->on('account_types')->onDelete('cascade');
+            $table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
         });
     }
 

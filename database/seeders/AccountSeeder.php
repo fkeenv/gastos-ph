@@ -19,7 +19,7 @@ class AccountSeeder extends Seeder
         DB::table('accounts')->insert([
             // -- ASSETS
             [
-                'account_type_id' => AccountType::ASSET,
+                'type_id' => AccountType::ASSET,
                 'account_code' => 1001,
                 'name' => 'Cash',
                 'description' => 'Asset - Cash',
@@ -27,7 +27,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::ASSET,
+                'type_id' => AccountType::ASSET,
                 'account_code' => 1002,
                 'name' => 'Accounts Receivable',
                 'description' => 'Asset - Accounts Receivable',
@@ -35,7 +35,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::ASSET,
+                'type_id' => AccountType::ASSET,
                 'account_code' => 1003,
                 'name' => 'Inventory',
                 'description' => 'Asset - Inventory',
@@ -43,7 +43,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::ASSET,
+                'type_id' => AccountType::ASSET,
                 'account_code' => 1004,
                 'name' => 'Fixed Asset',
                 'description' => 'Asset - Fixed Asset',
@@ -51,7 +51,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::ASSET,
+                'type_id' => AccountType::ASSET,
                 'account_code' => 1005,
                 'name' => 'Prepaid Expenses',
                 'description' => 'Asset - Prepaid Expenses',
@@ -60,7 +60,7 @@ class AccountSeeder extends Seeder
             ],
             // -- Liabilities
             [
-                'account_type_id' => AccountType::LIABILITY,
+                'type_id' => AccountType::LIABILITY,
                 'account_code' => 2001,
                 'name' => 'Accounts Payable',
                 'description' => 'Liability - Accounts Payable',
@@ -68,7 +68,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::LIABILITY,
+                'type_id' => AccountType::LIABILITY,
                 'account_code' => 2002,
                 'name' => 'Taxes Payable',
                 'description' => 'Liability - Taxes Payable',
@@ -76,7 +76,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::LIABILITY,
+                'type_id' => AccountType::LIABILITY,
                 'account_code' => 2003,
                 'name' => 'Wages Payable',
                 'description' => 'Liability - Wages Payable',
@@ -84,7 +84,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::LIABILITY,
+                'type_id' => AccountType::LIABILITY,
                 'account_code' => 2004,
                 'name' => 'Accrued Liabilities',
                 'description' => 'Liability - Accrued Liabilities',
@@ -93,7 +93,7 @@ class AccountSeeder extends Seeder
             ],
             // -- Equity
             [
-                'account_type_id' => AccountType::EQUITY,
+                'type_id' => AccountType::EQUITY,
                 'account_code' => 3001,
                 'name' => 'Common Stock',
                 'description' => 'Equity - Common Stock',
@@ -101,7 +101,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EQUITY,
+                'type_id' => AccountType::EQUITY,
                 'account_code' => 3002,
                 'name' => 'Retained Earnings',
                 'description' => 'Equity - Retained Earnings',
@@ -110,7 +110,7 @@ class AccountSeeder extends Seeder
             ],
             // -- Revenue
             [
-                'account_type_id' => AccountType::REVENUE,
+                'type_id' => AccountType::REVENUE,
                 'account_code' => 4001,
                 'name' => 'Sales Revenue',
                 'description' => 'Revenue - Sales Revenue',
@@ -118,7 +118,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::REVENUE,
+                'type_id' => AccountType::REVENUE,
                 'account_code' => 4002,
                 'name' => 'Sales Returns and Allowances',
                 'description' => 'Revenue - Sales Returns and Allowances',
@@ -127,7 +127,7 @@ class AccountSeeder extends Seeder
             ],
             // -- Expenses
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5001,
                 'name' => 'Cost of Goods Sold',
                 'description' => 'Expense - Cost of Goods Sold',
@@ -135,7 +135,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5002,
                 'name' => 'Rent Expense',
                 'description' => 'Expense - Rent Expense',
@@ -143,7 +143,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5003,
                 'name' => 'Wages Expense',
                 'description' => 'Expense - Wages Expense',
@@ -151,7 +151,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5004,
                 'name' => 'Advertising Expense',
                 'description' => 'Expense - Advertising Expense',
@@ -159,7 +159,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5005,
                 'name' => 'Depreciation Expense',
                 'description' => 'Expense - Depreciation Expense',
@@ -167,7 +167,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5006,
                 'name' => 'Bank Fees',
                 'description' => 'Expense - Bank Fees',
@@ -175,7 +175,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5007,
                 'name' => 'Utility Expense',
                 'description' => 'Expense - Utility Expense',
@@ -183,7 +183,7 @@ class AccountSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'account_type_id' => AccountType::EXPENSE,
+                'type_id' => AccountType::EXPENSE,
                 'account_code' => 5008,
                 'name' => 'Debt',
                 'description' => 'Expense - Debt (Loans & Mortgages)',

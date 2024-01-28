@@ -1,8 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
-  plugins: ["~/plugins/preline.client.ts"],
+  css: ['~/assets/css/tailwind.css'],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  },
   postcss: {
     plugins: {
         tailwindcss: {},
